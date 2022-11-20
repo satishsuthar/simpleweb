@@ -1,0 +1,13 @@
+@mixin animateIt($duration: 0.25s, $timing_func: ease-out, $delay: 0s) {
+    -webkit-transition: all $duration $timing_func $delay;
+    -moz-transition: all $duration $timing_func $delay;
+    -o-transition: all $duration $timing_func $delay;
+    transition: all $duration $timing_func $delay;
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

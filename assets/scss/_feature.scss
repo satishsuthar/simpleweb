@@ -1,0 +1,120 @@
+.feature-section {
+
+    &-wrapper {
+        padding: 15rem 0 13.5rem 0;
+
+        @media (max-width: 991px) {
+            padding: 5rem 0;
+        }
+    }
+
+    &-content {
+
+        &-row {
+            margin-top: 9.4rem;
+            div[class*='col'] {
+                &:nth-child(n+4) {
+                    margin-top: 3.2rem;
+                }
+
+                @media (max-width: 991px) {
+                    &:nth-child(n+2) {
+                        margin-top: 3.2rem;
+                    }
+                }
+            }
+
+            @media (max-width: 991px) {
+                margin-top: 3rem;
+            }
+        }
+
+        h3 {
+            margin: 4.7rem 0 3.2rem 0;
+
+            @media (max-width: 991px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    .button-group {
+        margin-top: 8.4rem;
+
+        @media (max-width: 991px) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+.features {
+
+    &-padding-1 {
+        .features-wrapper {
+            padding: 11.5rem 0 15.5rem 0;
+
+            @media (max-width: 991px) {
+                padding: 5rem 0;
+            }
+        }
+    }
+
+    &-padding-2 {
+        .features-wrapper {
+            padding: 17.3rem 0 15.5rem 0;
+
+            @media (max-width: 991px) {
+                padding: 5rem 0;
+            }
+        }
+    }
+
+    &-content {
+        > * {
+            &:nth-child(n+2) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    &-wrapper {
+        position: relative;
+        z-index: 4;
+    }
+
+    > .background-layout {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .box-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 91%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        @media (max-width: 991px) {
+            .box-1 {
+                width: 98%;
+            }
+        }
+    }
+}
+
+.features-2 {
+    .background-layout {
+        .box-1 {
+            width: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .box-1 {
+                width: 100%;
+            }
+        }
+    }
+}

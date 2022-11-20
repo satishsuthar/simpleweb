@@ -1,0 +1,94 @@
+.accordion {
+    &-header {
+        background-color: transparent;
+        outline: none;
+    }
+
+    &-item {
+        border: 0;
+        width: 90%;
+        outline: none;
+        border-top: .1rem solid var(--color-grey-1) !important;
+        padding: 2rem 0 1.9rem 0;
+        background-color: transparent;
+
+        &-wrapper {
+            display: flex;
+            align-items: flex-start;
+
+            > .icon-small {
+                width: 10%;
+                margin-top: 1.7rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            width: 85%;
+            &-wrapper {
+                > .icon-small {
+                    width: 15%;
+                }
+            }
+            // border-top: none !important;
+            // padding-top: 1rem;
+
+            // &-wrapper {
+            //     flex-direction: column;
+
+            //     > .icon-small {
+            //         border-top: .1rem solid var(--color-grey-1) !important;
+            //         width: 100%;
+            //         padding-top: 2rem;
+            //     }
+            // }
+        }
+    }
+
+
+    &-1 {
+        .accordion-item {
+            &:first-child {
+                border-top: none !important;
+            }
+        }
+    }
+
+    &-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        outline: none;
+        padding: 0 0 0 0;
+        background-color: transparent;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
+        h4 {
+            margin: 0;
+        }
+
+        &:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+            color: initial;
+
+            &::after {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239797ad'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            }
+        }
+
+        &::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239797ad'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+            background-size: cover;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    &-body {
+        padding: 1rem 0 .4rem 0;
+    }
+
+}

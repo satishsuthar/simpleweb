@@ -1,0 +1,56 @@
+/****************************************
+general
+****************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    margin-top: 0;
+    padding: 0;
+
+    @media (max-width: 991px) {
+        font-size: 58.5%;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 56.5%;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 53.5%;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 51.5%;
+    }
+
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    
+    overflow-x: hidden;
+}
+
+/****************************************
+container
+****************************************/
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: unset;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px;
+    }
+}

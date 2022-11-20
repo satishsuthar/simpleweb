@@ -1,0 +1,75 @@
+.screen-section {
+    .heading {
+        margin-bottom: 8.2rem;
+
+        @media (max-width: 991px) {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.screen-slider {
+    &-wrapper {
+        width: 90%;
+        margin: 0 auto;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    .background-layout {
+        .box-1 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 92%;
+            height: 85%;
+        }
+        .box-2 {
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            width: 8.7%;
+            aspect-ratio: 1 / 1;
+            &-1 {
+                position: absolute;
+                bottom: 100%;
+                left: -57%;
+                width: 57%;
+                aspect-ratio: 1 / 1;
+            }
+        }
+        .box-3 {
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            width: 8.7%;
+            aspect-ratio: 1 / 1;
+            &-1 {
+                position: absolute;
+                top: 100%;
+                left: -57%;
+                width: 57%;
+                aspect-ratio: 1 / 1;
+            }
+        }
+    }
+}
+
+.screen-section-1 {
+    .screen-slider {
+        .background-layout {
+            .box-1 {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.screen-slide {
+    img {
+        max-width: 100%;
+    }
+}

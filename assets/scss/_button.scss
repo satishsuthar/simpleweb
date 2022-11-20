@@ -1,0 +1,223 @@
+.button {
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+
+    padding: 1.9rem 6.5rem 1.6rem;
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include animateIt;
+        z-index: 1;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        top: 100%;
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+
+        font-size: 1.6rem;
+        font-weight: 700;
+        @include animateIt;
+    }
+
+    &:hover {
+        &::before {
+            top: -100%;
+        }
+        &::after {
+            top: 0;
+        }
+    }
+
+    &-full-width {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &-red {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-red);
+        }
+        &::after {
+            background-color: var(--color-dark);
+        }
+
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--color-dark);
+                }
+            }
+            &::after {
+                background-color: var(--color-light);
+            }
+        }
+    }
+
+    &-blue {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-blue);
+        }
+        &::after {
+            background-color: var(--color-dark);
+        }
+    }
+
+    &-blue-2 {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-blue);
+        }
+        &::after {
+            background-color: #fff;
+        }
+
+        &:hover {
+            span {
+                color: var(--color-dark);
+            }
+        }
+    }
+
+    &-light {
+        span {
+            color: var(--color-grey);
+        }
+        &::before {
+            background-color: var(--color-light);
+        }
+        &::after {
+            background-color: var(--color-dark);
+        }
+        &:hover {
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    &-light-2 {
+        span {
+            color: var(--color-grey-6);
+        }
+        &::before {
+            background-color: var(--color-light);
+        }
+        &::after {
+            background-color: var(--color-blue);
+        }
+        &:hover {
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    &-dark {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-dark-2);
+        }
+        &::after {
+            background-color: var(--color-blue);
+        }
+        &:hover {
+            span {
+                color: #fff;
+            }
+        }
+    }
+
+    &-green {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-green);
+        }
+        &::after {
+            background-color: var(--color-dark);
+        }
+    }
+
+    &-purple {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--color-purple);
+        }
+        &::after {
+            background-color: var(--color-dark);
+        }
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--color-dark);
+                }
+            }
+            &::after {
+                background-color: var(--color-light);
+            }
+        }
+    }
+
+    &-navigation {
+        padding: 1.6rem 2.7rem 1.2rem 2.7rem;
+        position: relative;
+        z-index: 2;
+
+        span {
+            font-size: 1.4rem;
+            
+        }
+
+        @media (max-width: 1199px) {
+            display: block;
+            margin: 3rem auto 0 auto;
+            width: 70%;
+            padding: 2.2rem 2.7rem 1.8rem 2.7rem;
+        }
+    }
+}
+
+.button-group {
+    margin-top: -.7rem;
+    margin-right: -.7rem;
+
+    .button {
+        margin-top: .7rem;
+        margin-right: .7rem;
+    }
+
+    &-center {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

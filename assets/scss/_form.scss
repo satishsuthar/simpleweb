@@ -1,0 +1,102 @@
+.form-floating {
+    
+    .form-control {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-grey);
+
+        height: 5.1rem;
+        padding: 0 3rem 0 1rem;
+
+        outline: none;
+        border: none;
+        border-bottom: .2rem solid var(--color-grey-1);
+        box-shadow: none;
+        background-color: transparent;
+
+        &:focus {
+            border-color: var(--color-red);
+        }
+    }
+
+    label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-grey);
+
+        padding: 0;
+        height: auto;
+        top: 50%;
+        left: 1rem;
+        transform: translateY(-50%);
+
+        @include animateIt;
+    }
+
+    & > .form-control:focus ~ label, 
+    & > .form-control:not(:placeholder-shown) ~ label, 
+    & > .form-select ~ label {
+        top: 0;
+        transform: translateY(-10%) scale(.85);
+    }
+
+    
+}
+
+.checkbox {
+    position: relative;
+    input {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        opacity: 0;
+        width: 2.3rem;
+        height: 2.3rem;
+
+        &:checked + label::after {
+            opacity: 1;
+        }
+    }
+
+    label {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--color-grey);
+
+        margin-left: 4.3rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 2.3rem;
+            height: 2.3rem;
+            background-color: #fff;
+        }
+
+        &::after {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--color-green);
+            opacity: 0;
+
+            
+            position: absolute;
+            top: 50%;
+            left: .5rem;
+            transform: translateY(-50%);
+            @include animateIt;
+        }
+    }
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
