@@ -7,7 +7,7 @@ class EmailLeadForm extends React.Component {
     }
     render(){
         if(this.state.hasFilledContact)
-            return <a href="#" class="c-dark button button-green"><span>Book Consultation </span></a>;
+            return <a href="#" class="c-dark button button-green"><span>Book Consultation</span></a>;
         else
             return <h1>Thank you very much contacting us.</h1>;
     }
