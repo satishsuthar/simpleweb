@@ -279,6 +279,19 @@ container
 .c-grey-4 {
   color: var(--color-grey-4);
 }
+.c-simple-green {
+  color: var(--simple-color-green);
+}
+.c-simple-orange {
+ color: var(--simple-color-orange);
+}
+.c-simple-blue {
+ color: var(--simple-color-blue);
+}
+.c-simple-yellow {
+ color: var(--simple-color-yellow);
+}
+
 
 .bg-red {
   background-color: var(--color-red);
