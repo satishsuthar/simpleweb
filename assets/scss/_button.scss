@@ -71,6 +71,97 @@
             }
         }
     }
+    &-simple-orange {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--simple-color-orange);
+        }
+        &::after {
+            background-color: var(--simple-color-orange-dark-7);
+        }
+
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--simple-color-orange-dark-7);
+                }
+            }
+            &::after {
+                background-color: var(--simple-color-orange-light-8);
+            }
+        }
+    }
+
+    &-simple-blue {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--simple-color-blue);
+        }
+        &::after {
+            background-color: var(--simple-color-blue-dark-7);
+        }
+
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--simple-color-blue-dark-7);
+                }
+            }
+            &::after {
+                background-color: var(--simple-color-blue-light-8);
+            }
+        }
+    }
+
+    &-simple-green {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--simple-color-green);
+        }
+        &::after {
+            background-color: var(--simple-color-green-dark-7);
+        }
+
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--simple-color-green-dark-7);
+                }
+            }
+            &::after {
+                background-color: var(--simple-color-green-light-8);
+            }
+        }
+    }
+
+    &-simple-yellow {
+        span {
+            color: #fff;
+        }
+        &::before {
+            background-color: var(--simple-color-yellow);
+        }
+        &::after {
+            background-color: var(--simple-color-yellow-dark-7);
+        }
+
+        &-hover-white {
+            &:hover {
+                span {
+                    color: var(--simple-color-yellow-dark-7);
+                }
+            }
+            &::after {
+                background-color: var(--simple-color-yellow-light-8);
+            }
+        }
+    }
 
     &-blue {
         span {

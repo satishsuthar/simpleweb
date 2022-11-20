@@ -82,6 +82,12 @@
             background-color: var(--color-red-rgba-8);
         }
     }
+    &-simple-color-orange {
+        background-color: var(--simple-color-orange);
+        &-light-8 {
+            background-color: var(--simple-color-orange-light-8);
+        }
+    }
     &-pink {
         background-color: var(--color-pink);
     }
@@ -103,8 +109,17 @@
             background-color: var(--color-blue-rgba-8);
         }
     }
+    &-simple-color-blue {
+        background-color: var(--simple-color-blue);
+        &-rgba-8 {
+            background-color: var(--simple-color-blue-light-8);
+        }
+    }
     &-yellow {
         background-color: var(--color-yellow);
+    }
+    &-simple-color-yellow {
+        background-color: var(--simple-color-yellow);
     }
     &-green {
         background-color: var(--color-green);
@@ -116,6 +131,13 @@
         background-color: var(--color-grey);
         &-5 {
             background-color: var(--color-grey-5);
+        }
+    }
+
+    &-simple-green {
+        background-color: var(--simple-color-green);
+        &-5 {
+            background-color: var(----simple-color-green-light-5);
         }
     }
 }
